@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/your-username/your-repo.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t myapp .'
