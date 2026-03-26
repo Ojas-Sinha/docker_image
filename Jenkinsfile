@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                bat 'docker run -d myapp'
+                bat 'docker run myapp'
             }
         }
     }
